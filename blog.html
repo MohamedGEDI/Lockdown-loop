@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lockdown loop</title>
+        
+       
+        <!-- Bootstrap linking-->
+        <!-- CSS, JS, Popper.js, and jQuery -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <!--Font-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Chivo" />
+         <!--Custom stylng-->
+         <link rel="stylesheet" href="blog.css" />
+    </head>
+<body>
+    <header>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #71a8d4;">
+        <a class="navbar-brand" href="#">Lockdown Loop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="blog.html">Blogs     </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <section class="intro"> 
+        
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">Penny for your thoughts</h1>
+                <p class="lead">blog about your pass tme in lockdown</p>
+                <hr class="my-4">
+                <a class="btn btn-primary" href="#blogForm">start blogging</a>
+            </div>
+       
+         
+       
+
+    </section>
+    <section class="blogs">
+        <div class="offset-md-2 col-sm-8" id = "blogIntro">
+            <h2>Latest posts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum exercitationem, nihil veritatis veniam sit quam esse animi autem aliquid eius vitae, unde delectus alias excepturi fugiat voluptatem necessitatibus ipsa!</p>
+        </div>
+        
+        
+        <div id="blog-list"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container offset-md-2 col-sm-6">
+        <form id="blogForm">
+            <label>Title</label>
+            <input class="form-control " type="text" id="my-title"/>
+            <div class="form-group">
+                <label for="my-textarea" >Blog</label>
+                <textarea id="my-textarea" class="form-control" name="" rows="3" ></textarea>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-block" id="submit"  >Submit</button>
+            </div>
+        </form>
+    </div>
+    </section>
+    <script type="text/javascript" src="main.js" ></script>
+</body>
+</html>
